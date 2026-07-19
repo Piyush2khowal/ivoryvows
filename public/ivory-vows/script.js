@@ -384,17 +384,39 @@
   }, { threshold: .5 });
   document.querySelectorAll('.num').forEach(n => statIO.observe(n));
 
-  /* ---- Contact form ---- */
-  const form = document.getElementById('contactForm'),
-        status = document.getElementById('formStatus');
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    status.textContent = 'Sending…';
-    setTimeout(() => {
-      status.textContent = 'Thank you — we will be in touch within 24 hours.';
-      form.reset();
-    }, 700);
+/* ---- Contact form ---- */
+const form = document.getElementById('contactForm');
+const status = document.getElementById('formStatus');
+
+if (form) {
+
+  form.addEventListener('submit', () => {
+    status.textContent = 'Sending...';
   });
 
-  document.getElementById('year').textContent = new Date().getFullYear();
+  const params = new URLSearchParams(window.location.search);
+
+  if (params.get('success') === '1') {
+    status.textContent = 'Thank you — we will be in touch within 24 hours.';
+    form.reset();
+
+    window.history.replaceState(
+      {},
+      document.title,
+      window.location.pathname + '#contact'
+    );
+  }
+
+  if (params.get('error') === '1') {
+    status.textContent = 'Sorry! Something went wrong. Please try again.';
+
+    window.history.replaceState(
+      {},
+      document.title,
+      window.location.pathname + '#contact'
+    );
+  }
+}
+
+document.getElementById('year').textContent = new Date().getFullYear();
 })();
