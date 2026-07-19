@@ -2,7 +2,7 @@
 (function () {
   'use strict';
 
-  const WA_NUMBER = '919876543210';
+  const WA_NUMBER = '919354810893';
 
   /* ---- Shared spec defaults ---- */
   const PAPER_PREMIUM = '300gsm Italian textured cotton, hot-foil ready';
