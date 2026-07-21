@@ -1,351 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Ivory Vows — Luxury Wedding Invitations & Stationery</title>
-<meta name="description" content="Ivory Vows crafts premium digital wedding invitations and bespoke stationery — elegant, modern, and made to be remembered." />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ivory Vows — Luxury Wedding Invitations & Stationery</title>
+  <meta name="description"
+    content="Ivory Vows crafts premium digital wedding invitations and bespoke stationery — elegant, modern, and made to be remembered." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar" id="navbar">
-  <div class="container nav-inner">
-    <a href="#home" class="logo">
-      <img src="assets/images/logo.png" alt="Ivory Vows" class="logo-img" />
-    </a>
-    <nav class="nav-links" id="navLinks">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#digital">Digital Invites</a>
-      <a href="#stationery">Stationery</a>
-      <a href="#contact">Contact</a>
-      <a href="#contact" class="btn btn-primary nav-cta">Enquire Now</a>
-    </nav>
-    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</header>
-
-<!-- HERO -->
-<section class="hero" id="home">
-  <div class="hero-bg"></div>
-  <div class="container hero-inner">
-    <div class="hero-text reveal">
-      <p class="eyebrow">Bespoke · Handcrafted · Timeless</p>
-      <h1>Invitations that begin<br/><em>your forever.</em></h1>
-      <p class="lead">Luxury digital invites and heirloom stationery, designed with quiet elegance for the most important day of your life.</p>
-      <div class="hero-cta">
-        <a href="#digital" class="btn btn-primary">Explore Invites</a>
-        <a href="#contact" class="btn btn-ghost">Book a Consultation</a>
-      </div>
-    </div>
-    <div class="hero-card reveal">
-      <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80" alt="Luxury wedding invitation suite" />
-      <div class="hero-card-badge">Est. 2018</div>
-    </div>
-  </div>
-  <a href="#about" class="scroll-indicator" aria-label="Scroll down">
-    <span></span>
-  </a>
-</section>
-
-<!-- ABOUT -->
-<section class="section about" id="about">
-  <div class="container about-grid">
-    <div class="reveal">
-      <img src="./cofounder.png" alt="Co-Founder" class="about-img">
-    </div>
-    <div class="reveal">
-      <p class="eyebrow">About Ivory Vows</p>
-      <h3>Where Every Love Story Begins<br/>with Beautiful Design.</h3>
-      <p>At <b>IvoryVows</b>, we create luxury wedding invitations and bespoke stationery that capture the elegance of your special day. Every design is thoughtfully crafted with premium materials, timeless aesthetics, and personalized details to create a lasting first impression.</p>
-      <p><b>Because every forever deserves an invitation as extraordinary as the love it celebrates</b>.</p>
-      <div class="about-marks">
-        <div><strong>Handcrafted</strong><span>Every detail, by hand</span></div>
-        <div><strong>Archival</strong><span>Museum-grade papers</span></div>
-        <div><strong>Bespoke</strong><span>One of one, always</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- DIGITAL INVITES -->
-<section class="section tinted" id="digital">
-  <div class="container">
-    <div class="section-head reveal">
-      <p class="eyebrow">Digital Invitations</p>
-      <h2>A suite for every celebration</h2>
-      <p class="muted">Beautifully animated, shareable, and crafted to mirror the elegance of paper.</p>
-    </div>
-    <div class="grid cards" id="digitalGrid"></div>
-  </div>
-</section>
-
-<!-- STATIONERY -->
-<section class="section" id="stationery">
-  <div class="container">
-    <div class="section-head reveal">
-      <p class="eyebrow">Wedding Stationery</p>
-      <h2>Day-of details, perfected</h2>
-      <p class="muted">From welcome to farewell — cohesive pieces that bring your story to life.</p>
-    </div>
-    <div class="grid cards" id="stationeryGrid"></div>
-  </div>
-</section>
-
-
-<!-- WHY -->
-<section class="section" id="why">
-  <div class="container">
-    <div class="section-head reveal">
-      <p class="eyebrow">Why Ivory Vows</p>
-      <h2>The Ivory difference</h2>
-    </div>
-    <div class="why-grid">
-      <div class="why-card reveal"><div class="why-ic">✦</div><h3>Beautifully Crafted Digital Invites</h3><p>Elegent deigns that reflect your story and set the perfect tone for your celebration.</p></div>
-      <div class="why-card reveal"><div class="why-ic">❀</div><h3>Interative & Engaging</h3><p>Add videos, music, RSVP, and more to create a rich, memorable experience.</p></div>
-      <div class="why-card reveal"><div class="why-ic">✈</div><h3>Eco-Friendly & Instant</h3><p>Share instantly across the globe while being kind to the planet with paperless invites.</p></div>
-      <div class="why-card reveal"><div class="why-ic">♥</div><h3>Hassle-free & On-time</h3><p>Quick turnaround, easy sharing, and timely delivery-so you can celebrate stress-free.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section class="section tinted">
-  <div class="container">
-    <div class="section-head reveal">
-      <p class="eyebrow">Kind Words</p>
-      <h2>Loved by couples worldwide</h2>
-    </div>
-    <div class="testimonials">
-      <figure class="t-card reveal">
-        <blockquote>“Our invitation suite arrived and we cried. Every detail — the foiling, the wax, the linen — felt like an heirloom.”</blockquote>
-        <figcaption>— Aanya &amp; Rohan, Udaipur</figcaption>
-      </figure>
-      <figure class="t-card reveal">
-        <blockquote>“Worth every penny. Ivory Vows captured our story with restraint and beauty. Guests still talk about it.”</blockquote>
-        <figcaption>— Sienna &amp; James, Como</figcaption>
-      </figure>
-      <figure class="t-card reveal">
-        <blockquote>“A dream to work with. Quietly luxurious — exactly what we wanted, executed flawlessly.”</blockquote>
-        <figcaption>— Priya &amp; Arjun, Jaipur</figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<!-- STATS -->
-<section class="section stats-section">
-  <div class="container stats">
-    <div class="stat reveal"><span class="num" data-target="1200">0</span><p>Happy Couples</p></div>
-    <div class="stat reveal"><span class="num" data-target="48000">0</span><p>Invitations Delivered</p></div>
-    <div class="stat reveal"><span class="num" data-target="3200">0</span><p>Projects Completed</p></div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section class="section tinted" id="faq">
-  <div class="container faq-wrap">
-
-    <div class="section-head reveal">
-      <p class="eyebrow">FAQ</p>
-      <h2>Frequently Asked Questions</h2>
-      <p>Everything you need to know about our digital invitations and services.</p>
-    </div>
-
-    <div class="faq">
-
-      <details>
-        <summary>What is a digital invitation?</summary>
-        <p>A digital invitation is a beautifully designed invite shared via WhatsApp, Instagram, Email, or SMS. It is a modern, eco-friendly, and convenient alternative to printed invitations.</p>
-      </details>
-
-      <details>
-        <summary>What types of invitations do you create?</summary>
-        <p>We create personalized invitations for Weddings, Engagements, Save the Date, Mehendi, Haldi, Sangeet, Reception, Bridal Shower, Baby Shower, Birthday Parties, Housewarming, Anniversaries, and Corporate Events.</p>
-      </details>
-
-      <details>
-        <summary>Can I customize my invitation?</summary>
-        <p>Yes! Every invitation is fully personalized with your names, event details, colors, fonts, photos, music, and theme to match your celebration perfectly.</p>
-      </details>
-
-      <details>
-        <summary>How long does it take to receive my invitation?</summary>
-        <p>Our standard delivery time is 3–7 business days depending on the design and customization. Express delivery is also available for urgent orders.</p>
-      </details>
-
-      <details>
-        <summary>Can I make changes after receiving the first draft?</summary>
-        <p>Absolutely! We offer revision rounds to ensure your invitation looks exactly the way you imagined.</p>
-      </details>
-
-      <details>
-        <summary>Will my invitation work on Android and iPhone?</summary>
-        <p>Yes. Our invitations work perfectly on Android phones, iPhones, tablets, and computers.</p>
-      </details>
-
-      <details>
-        <summary>How will I receive my invitation?</summary>
-        <p>Your invitation will be delivered as a shareable digital link and/or video file, making it easy to send through WhatsApp, Email, Instagram, Facebook, and other platforms.</p>
-      </details>
-
-      <details>
-        <summary>Can you match my wedding theme or color palette?</summary>
-        <p>Of course! We design invitations that perfectly match your wedding colors, décor, and overall event theme.</p>
-      </details>
-
-      <details>
-        <summary>Can I add background music?</summary>
-        <p>Yes! You can choose your favorite song or instrumental music, and we'll add it to your invitation (subject to licensing and compatibility).</p>
-      </details>
-    
-      <details>
-        <summary>Can I include Google Maps directions?</summary>
-        <p>Yes. We can add clickable Google Maps links so your guests can easily find your venue.</p>
-      </details>
-
-      <details>
-        <summary>Can I order invitations for multiple events?</summary>
-        <p>Yes! We offer matching invitation suites for all your wedding events to maintain a beautiful and consistent look.</p>
-      </details>
-
-      <details>
-        <summary>What information do I need to provide?</summary>
-        <p>We need the couple's names, event details, date & time, venue, photos (optional), preferred theme or colors, RSVP details, and any special message.</p>
-      </details>
-
-      <details>
-        <summary>Is payment required before work begins?</summary>
-        <p>Yes. An advance payment is required to confirm your booking and begin designing your personalized invitation.</p>
-      </details>
-
-      <details>
-        <summary>How can I place an order?</summary>
-        <p>Simply contact us through our website or WhatsApp, share your event details, choose your preferred design, and we'll take care of the rest.</p>
-      </details>
-
-      <details>
-        <summary>How much does a personalized digital invitation cost?</summary>
-        <p>Pricing depends on the design, features, and level of customization. Contact us for a personalized quote based on your requirements.</p>
-      </details>
-
-    </div>
-
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="section" id="contact">
-  <div class="container contact-grid">
-    <div class="reveal">
-      <p class="eyebrow">Enquire</p>
-      <h2>Begin your story with us</h2>
-      <p class="muted">Tell us a little about your celebration and we'll be in touch within 24 hours.</p>
-      <ul class="contact-info">
-        <li>ivoryvows18@gmail.com</li>
-        <li>+91 93548 10893</li>
-        <li>Studio · Delhi</li>
-      </ul>
-    </div>
-    <form class="contact-form reveal" id="contactForm" action="contact.php" method="POST">
-      <div class="row">
-        <label>Name<input type="text" name="name" required></label>
-        <label>Email<input type="email" name="email" required></label>
-      </div>
-      <div class="row">
-        <label>Phone<input type="tel" name="phone"></label>
-        <label>Wedding Date<input type="date" name="date"></label>
-      </div>
-      <label>Message<textarea name="message" rows="5" required></textarea></label>
-      <button type="submit" class="btn btn-primary">Send Enquiry</button>
-      <p class="form-status" id="formStatus"></p>
-    </form>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="container footer-inner">
-    <div>
-      <a href="#home" class="logo logo-light">
-        <img src="assets/images/logo.png" alt="Ivory Vows" class="logo-img logo-img-light" />
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">
+        <img src="assets/images/logo.png" alt="Ivory Vows" class="logo-img" />
       </a>
-      <p class="muted">Luxury wedding invitations &amp; stationery. Designed in studio, made by hand.</p>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#digital">Digital Invites</a>
+        <a href="#stationery">Stationery</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="btn btn-primary nav-cta">Enquire Now</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-    <div>
-      <h4>Explore</h4>
-      <a href="#about">About</a>
-      <a href="#digital">Digital Invites</a>
-      <a href="#stationery">Stationery</a>
-      
-    </div>
-    <div>
-      <h4>Contact</h4>
-      <a href="mailto:hello@ivoryvows.com">ivoryvows18@gmail.com</a>
-      <a href="tel:+919354810893">+91 93548 10893</a>
-      <a href="https://www.instagram.com/ivoryvows_wedding?igsh=N2hqNWphbW9oeHNs">Instagram</a>
-    </div>
-  </div>
-  <div class="container footer-base">
-    <p>© <span id="year"></span> Ivory Vows. All rights reserved.</p>
-    <p>Crafted with love.</p>
-  </div>
-</footer>
+  </header>
 
-<!-- WHATSAPP -->
-<a href="https://wa.me/919354810893" class="whatsapp" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">
-  <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor"><path d="M16 .5C7.4.5.5 7.4.5 16c0 2.8.8 5.5 2.2 7.9L.5 31.5l7.8-2.1c2.3 1.3 4.9 2 7.7 2 8.6 0 15.5-6.9 15.5-15.5S24.6.5 16 .5zm0 28.2c-2.5 0-4.9-.7-7-1.9l-.5-.3-4.6 1.2 1.2-4.5-.3-.5C3.5 20.6 2.8 18.3 2.8 16 2.8 8.7 8.7 2.8 16 2.8S29.2 8.7 29.2 16 23.3 28.7 16 28.7zm7.4-9.9c-.4-.2-2.4-1.2-2.7-1.3-.4-.1-.6-.2-.9.2s-1 1.3-1.2 1.5c-.2.2-.4.3-.8.1-.4-.2-1.7-.6-3.3-2-1.2-1.1-2-2.4-2.2-2.8-.2-.4 0-.6.2-.8.2-.2.4-.4.6-.7.2-.2.3-.4.4-.7.1-.3.1-.5 0-.7-.1-.2-.9-2.1-1.2-2.9-.3-.8-.7-.7-.9-.7h-.8c-.3 0-.7.1-1.1.5s-1.4 1.4-1.4 3.4 1.4 3.9 1.6 4.2c.2.3 2.8 4.3 6.8 6 4 1.7 4 1.1 4.7 1 .7-.1 2.4-1 2.7-1.9.3-1 .3-1.8.2-1.9-.1-.2-.3-.3-.7-.5z"/></svg>
-</a>
-
-<!-- CATEGORY / DESIGNS GRID MODAL -->
-<div class="category-modal" id="categoryModal" aria-hidden="true" role="dialog" aria-modal="true">
-  <div class="cm-backdrop" data-close-cm></div>
-  <div class="cm-dialog" role="document">
-    <button class="cm-close" id="cmClose" aria-label="Close">×</button>
-    <div class="cm-head">
-      <p class="cm-breadcrumb" id="cmBreadcrumb"></p>
-      <h2 id="cmTitle"></h2>
-      <p class="muted" id="cmSubtitle"></p>
-      <div class="cm-toolbar">
-        <span class="cm-count" id="cmCount"></span>
-        <label class="cm-sort">Sort by
-          <select id="cmSortSelect">
-            <option value="popular">Popular</option>
-            <option value="price-asc">Price: Low to High</option>
-            <option value="price-desc">Price: High to Low</option>
-          </select>
-        </label>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="container hero-inner">
+      <div class="hero-text reveal">
+        <p class="eyebrow">Bespoke · Handcrafted · Timeless</p>
+        <h1>Invitations that begin<br /><em>your forever.</em></h1>
+        <p class="lead">Luxury digital invites and heirloom stationery, designed with quiet elegance for the most
+          important day of your life.</p>
+        <div class="hero-cta">
+          <a href="#digital" class="btn btn-primary">Explore Invites</a>
+          <a href="#contact" class="btn btn-ghost">Book a Consultation</a>
+        </div>
+      </div>
+      <div class="hero-card reveal">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80"
+          alt="Luxury wedding invitation suite" />
+        <div class="hero-card-badge">Est. 2018</div>
       </div>
     </div>
-    <div class="cm-grid" id="cmGrid"></div>
-    <div class="cm-more-wrap">
-      <button class="btn btn-ghost cm-more" id="cmLoadMore">Load More Designs</button>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="container about-grid">
+      <div class="reveal">
+        <img src="./cofounder.png" alt="Co-Founder" class="about-img">
+      </div>
+      <div class="reveal">
+        <p class="eyebrow">About Ivory Vows</p>
+        <h3>Where Every Love Story Begins<br />with Beautiful Design.</h3>
+        <p>At <b>IvoryVows</b>, we create luxury wedding invitations and bespoke stationery that capture the elegance of
+          your special day. Every design is thoughtfully crafted with premium materials, timeless aesthetics, and
+          personalized details to create a lasting first impression.</p>
+        <p><b>Because every forever deserves an invitation as extraordinary as the love it celebrates</b>.</p>
+        <div class="about-marks">
+          <div><strong>Handcrafted</strong><span>Every detail, by hand</span></div>
+          <div><strong>Archival</strong><span>Museum-grade papers</span></div>
+          <div><strong>Bespoke</strong><span>One of one, always</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIGITAL INVITES -->
+  <section class="section tinted" id="digital">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Digital Invitations</p>
+        <h2>A suite for every celebration</h2>
+        <p class="muted">Beautifully animated, shareable, and crafted to mirror the elegance of paper.</p>
+      </div>
+      <div class="grid cards" id="digitalGrid"></div>
+    </div>
+  </section>
+
+  <!-- STATIONERY -->
+  <section class="section" id="stationery">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Wedding Stationery</p>
+        <h2>Day-of details, perfected</h2>
+        <p class="muted">From welcome to farewell — cohesive pieces that bring your story to life.</p>
+      </div>
+      <div class="grid cards" id="stationeryGrid"></div>
+    </div>
+  </section>
+
+
+  <!-- WHY -->
+  <section class="section" id="why">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Why Ivory Vows</p>
+        <h2>The Ivory difference</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <div class="why-ic">✦</div>
+          <h3>Beautifully Crafted Digital Invites</h3>
+          <p>Elegent deigns that reflect your story and set the perfect tone for your celebration.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-ic">❀</div>
+          <h3>Interative & Engaging</h3>
+          <p>Add videos, music, RSVP, and more to create a rich, memorable experience.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-ic">✈</div>
+          <h3>Eco-Friendly & Instant</h3>
+          <p>Share instantly across the globe while being kind to the planet with paperless invites.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-ic">♥</div>
+          <h3>Hassle-free & On-time</h3>
+          <p>Quick turnaround, easy sharing, and timely delivery-so you can celebrate stress-free.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section tinted">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Kind Words</p>
+        <h2>Loved by couples worldwide</h2>
+      </div>
+      <div class="testimonials">
+        <figure class="t-card reveal">
+          <blockquote>“Our invitation suite arrived and we cried. Every detail — the foiling, the wax, the linen — felt
+            like an heirloom.”</blockquote>
+          <figcaption>— Aanya &amp; Rohan, Udaipur</figcaption>
+        </figure>
+        <figure class="t-card reveal">
+          <blockquote>“Worth every penny. Ivory Vows captured our story with restraint and beauty. Guests still talk
+            about it.”</blockquote>
+          <figcaption>— Sienna &amp; James, Como</figcaption>
+        </figure>
+        <figure class="t-card reveal">
+          <blockquote>“A dream to work with. Quietly luxurious — exactly what we wanted, executed flawlessly.”
+          </blockquote>
+          <figcaption>— Priya &amp; Arjun, Jaipur</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="section stats-section">
+    <div class="container stats">
+      <div class="stat reveal"><span class="num" data-target="1200">0</span>
+        <p>Happy Couples</p>
+      </div>
+      <div class="stat reveal"><span class="num" data-target="48000">0</span>
+        <p>Invitations Delivered</p>
+      </div>
+      <div class="stat reveal"><span class="num" data-target="3200">0</span>
+        <p>Projects Completed</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section tinted" id="faq">
+    <div class="container faq-wrap">
+
+      <div class="section-head reveal">
+        <p class="eyebrow">FAQ</p>
+        <h2>Frequently Asked Questions</h2>
+        <p>Everything you need to know about our digital invitations and services.</p>
+      </div>
+
+      <div class="faq">
+
+        <details>
+          <summary>What is a digital invitation?</summary>
+          <p>A digital invitation is a beautifully designed invite shared via WhatsApp, Instagram, Email, or SMS. It is
+            a modern, eco-friendly, and convenient alternative to printed invitations.</p>
+        </details>
+
+        <details>
+          <summary>What types of invitations do you create?</summary>
+          <p>We create personalized invitations for Weddings, Engagements, Save the Date, Mehendi, Haldi, Sangeet,
+            Reception, Bridal Shower, Baby Shower, Birthday Parties, Housewarming, Anniversaries, and Corporate Events.
+          </p>
+        </details>
+
+        <details>
+          <summary>Can I customize my invitation?</summary>
+          <p>Yes! Every invitation is fully personalized with your names, event details, colors, fonts, photos, music,
+            and theme to match your celebration perfectly.</p>
+        </details>
+
+        <details>
+          <summary>How long does it take to receive my invitation?</summary>
+          <p>Our standard delivery time is 3–7 business days depending on the design and customization. Express delivery
+            is also available for urgent orders.</p>
+        </details>
+
+        <details>
+          <summary>Can I make changes after receiving the first draft?</summary>
+          <p>Absolutely! We offer revision rounds to ensure your invitation looks exactly the way you imagined.</p>
+        </details>
+
+        <details>
+          <summary>Will my invitation work on Android and iPhone?</summary>
+          <p>Yes. Our invitations work perfectly on Android phones, iPhones, tablets, and computers.</p>
+        </details>
+
+        <details>
+          <summary>How will I receive my invitation?</summary>
+          <p>Your invitation will be delivered as a shareable digital link and/or video file, making it easy to send
+            through WhatsApp, Email, Instagram, Facebook, and other platforms.</p>
+        </details>
+
+        <details>
+          <summary>Can you match my wedding theme or color palette?</summary>
+          <p>Of course! We design invitations that perfectly match your wedding colors, décor, and overall event theme.
+          </p>
+        </details>
+
+        <details>
+          <summary>Can I add background music?</summary>
+          <p>Yes! You can choose your favorite song or instrumental music, and we'll add it to your invitation (subject
+            to licensing and compatibility).</p>
+        </details>
+
+        <details>
+          <summary>Can I include Google Maps directions?</summary>
+          <p>Yes. We can add clickable Google Maps links so your guests can easily find your venue.</p>
+        </details>
+
+        <details>
+          <summary>Can I order invitations for multiple events?</summary>
+          <p>Yes! We offer matching invitation suites for all your wedding events to maintain a beautiful and consistent
+            look.</p>
+        </details>
+
+        <details>
+          <summary>What information do I need to provide?</summary>
+          <p>We need the couple's names, event details, date & time, venue, photos (optional), preferred theme or
+            colors, RSVP details, and any special message.</p>
+        </details>
+
+        <details>
+          <summary>Is payment required before work begins?</summary>
+          <p>Yes. An advance payment is required to confirm your booking and begin designing your personalized
+            invitation.</p>
+        </details>
+
+        <details>
+          <summary>How can I place an order?</summary>
+          <p>Simply contact us through our website or WhatsApp, share your event details, choose your preferred design,
+            and we'll take care of the rest.</p>
+        </details>
+
+        <details>
+          <summary>How much does a personalized digital invitation cost?</summary>
+          <p>Pricing depends on the design, features, and level of customization. Contact us for a personalized quote
+            based on your requirements.</p>
+        </details>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <p class="eyebrow">Enquire</p>
+        <h2>Begin your story with us</h2>
+        <p class="muted">Tell us a little about your celebration and we'll be in touch within 24 hours.</p>
+        <ul class="contact-info">
+          <li>ivoryvows18@gmail.com</li>
+          <li>+91 93548 10893</li>
+          <li>Studio · Delhi</li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+
+        <input type="hidden" name="access_key" value="88b8ef4d-3c5a-461a-94b9-2bfac15074b1">
+
+        <div class="row">
+          <label>Name
+            <input type="text" name="name" required>
+          </label>
+
+          <label>Email
+            <input type="email" name="email" required>
+          </label>
+        </div>
+
+        <div class="row">
+          <label>Phone
+            <input type="tel" name="phone">
+          </label>
+
+          <label>Wedding Date
+            <input type="date" name="date">
+          </label>
+        </div>
+
+        <label>Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+
+        <button type="submit" class="btn btn-primary">
+          Send Enquiry
+        </button>
+
+        <p class="form-status" id="formStatus"></p>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a href="#home" class="logo logo-light">
+          <img src="assets/images/logo.png" alt="Ivory Vows" class="logo-img logo-img-light" />
+        </a>
+        <p class="muted">Luxury wedding invitations &amp; stationery. Designed in studio, made by hand.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="#about">About</a>
+        <a href="#digital">Digital Invites</a>
+        <a href="#stationery">Stationery</a>
+
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:hello@ivoryvows.com">ivoryvows18@gmail.com</a>
+        <a href="tel:+919354810893">+91 93548 10893</a>
+        <a href="https://www.instagram.com/ivoryvows_wedding?igsh=N2hqNWphbW9oeHNs">Instagram</a>
+      </div>
+    </div>
+    <div class="container footer-base">
+      <p>© <span id="year"></span> Ivory Vows. All rights reserved.</p>
+      <p>Crafted with love.</p>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP -->
+  <a href="https://wa.me/919354810893" class="whatsapp" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor">
+      <path
+        d="M16 .5C7.4.5.5 7.4.5 16c0 2.8.8 5.5 2.2 7.9L.5 31.5l7.8-2.1c2.3 1.3 4.9 2 7.7 2 8.6 0 15.5-6.9 15.5-15.5S24.6.5 16 .5zm0 28.2c-2.5 0-4.9-.7-7-1.9l-.5-.3-4.6 1.2 1.2-4.5-.3-.5C3.5 20.6 2.8 18.3 2.8 16 2.8 8.7 8.7 2.8 16 2.8S29.2 8.7 29.2 16 23.3 28.7 16 28.7zm7.4-9.9c-.4-.2-2.4-1.2-2.7-1.3-.4-.1-.6-.2-.9.2s-1 1.3-1.2 1.5c-.2.2-.4.3-.8.1-.4-.2-1.7-.6-3.3-2-1.2-1.1-2-2.4-2.2-2.8-.2-.4 0-.6.2-.8.2-.2.4-.4.6-.7.2-.2.3-.4.4-.7.1-.3.1-.5 0-.7-.1-.2-.9-2.1-1.2-2.9-.3-.8-.7-.7-.9-.7h-.8c-.3 0-.7.1-1.1.5s-1.4 1.4-1.4 3.4 1.4 3.9 1.6 4.2c.2.3 2.8 4.3 6.8 6 4 1.7 4 1.1 4.7 1 .7-.1 2.4-1 2.7-1.9.3-1 .3-1.8.2-1.9-.1-.2-.3-.3-.7-.5z" />
+    </svg>
+  </a>
+
+  <!-- CATEGORY / DESIGNS GRID MODAL -->
+  <div class="category-modal" id="categoryModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="cm-backdrop" data-close-cm></div>
+    <div class="cm-dialog" role="document">
+      <button class="cm-close" id="cmClose" aria-label="Close">×</button>
+      <div class="cm-head">
+        <p class="cm-breadcrumb" id="cmBreadcrumb"></p>
+        <h2 id="cmTitle"></h2>
+        <p class="muted" id="cmSubtitle"></p>
+        <div class="cm-toolbar">
+          <span class="cm-count" id="cmCount"></span>
+          <label class="cm-sort">Sort by
+            <select id="cmSortSelect">
+              <option value="popular">Popular</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+            </select>
+          </label>
+        </div>
+      </div>
+      <div class="cm-grid" id="cmGrid"></div>
+      <div class="cm-more-wrap">
+        <button class="btn btn-ghost cm-more" id="cmLoadMore">Load More Designs</button>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- PRODUCT MODAL -->
-<div class="product-modal" id="productModal" aria-hidden="true" role="dialog" aria-modal="true">
-  <div class="pm-backdrop" data-close></div>
-  <div class="pm-dialog" role="document">
-    <button class="pm-close" id="pmClose" aria-label="Close">×</button>
-    <div class="pm-content" id="pmContent"></div>
+  <!-- PRODUCT MODAL -->
+  <div class="product-modal" id="productModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="pm-backdrop" data-close></div>
+    <div class="pm-dialog" role="document">
+      <button class="pm-close" id="pmClose" aria-label="Close">×</button>
+      <div class="pm-content" id="pmContent"></div>
+    </div>
   </div>
-</div>
 
-<!-- LIGHTBOX -->
-<div class="lightbox" id="lightbox" aria-hidden="true">
-  <button class="lb-close" id="lbClose" aria-label="Close">×</button>
-  <img id="lbImg" alt="" />
-</div>
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-close" id="lbClose" aria-label="Close">×</button>
+    <img id="lbImg" alt="" />
+  </div>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>

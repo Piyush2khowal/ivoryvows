@@ -385,37 +385,31 @@
   document.querySelectorAll('.num').forEach(n => statIO.observe(n));
 
 /* ---- Contact form ---- */
-const form = document.getElementById('contactForm');
-const status = document.getElementById('formStatus');
+const form = document.getElementById("contactForm");
+const status = document.getElementById("formStatus");
 
 if (form) {
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
 
-  form.addEventListener('submit', () => {
-    status.textContent = 'Sending...';
+    status.textContent = "Sending...";
+
+    const formData = new FormData(form);
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const result = await response.json();
+
+    if (result.success) {
+      status.textContent = "✅ Thank you! We will contact you within 24 hours.";
+      form.reset();
+    } else {
+      status.textContent = "❌ Something went wrong. Please try again.";
+    }
   });
-
-  const params = new URLSearchParams(window.location.search);
-
-  if (params.get('success') === '1') {
-    status.textContent = 'Thank you — we will be in touch within 24 hours.';
-    form.reset();
-
-    window.history.replaceState(
-      {},
-      document.title,
-      window.location.pathname + '#contact'
-    );
-  }
-
-  if (params.get('error') === '1') {
-    status.textContent = 'Sorry! Something went wrong. Please try again.';
-
-    window.history.replaceState(
-      {},
-      document.title,
-      window.location.pathname + '#contact'
-    );
-  }
 }
 
 document.getElementById('year').textContent = new Date().getFullYear();
